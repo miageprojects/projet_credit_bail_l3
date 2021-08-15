@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="colorlib.com">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demande de Credit Bail</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/style_form.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="container">
+            <h2>Formulaire de Demande de Credit Bail</h2>
+            <form method="POST" id="signup-form" class="signup-form">
+                    <h3>
+                        <span class="icon"><i class="ti-user"></i></span>
+                        <span class="title_text">Personnelle</span>
+                    </h3>
+                    <fieldset>
+                        <legend>
+                            <span class="step-heading">Informations Personnelle: </span>
+                            <span class="step-number">Etape 1 / 4</span>
+                        </legend>
+                        <div class="form-row">
+                        <div class="form-group">
+                            <label for="name" class="form-label required">Nom</label>
+                            <input type="text" name="last_name" id="last_name" placeholder="Jean"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="first_name" class="form-label required">Prénoms</label>
+                            <input type="text" name="first_name" id="first_name" placeholder="Christ" />
+                        </div>
+                        </div>
+                        <div class="form-row">
+                        <div class="form-group">
+                            <label for="pays" class="form-label required">Pays</label>
+                            <input type="text" name="pays" id="pays" placeholder="Canada"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="ville" class="form-label required">Ville</label>
+                            <input type="text" name="ville" id="ville" placeholder="Abidjan"/>
+                        </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-date">
+                                <label for="birth_date" class="form-label required">Date de Naissance</label>
+                                <div class="form-date-group">
+                                    <div class="form-date-item">
+                                        <select id="birth_date" name="birth_date"></select>
+                                        <span class="select-icon"><i class="ti-angle-down"></i></span>
+                                    </div>
+                                    <div class="form-date-item">
+                                        <select id="birth_month" name="birth_month"></select>
+                                        <span class="select-icon"><i class="ti-angle-down"></i></span>
+                                    </div>
+                                    <div class="form-date-item">
+                                        <select id="birth_year" name="birth_year"></select>
+                                        <span class="select-icon"><i class="ti-angle-down"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lieu" class="form-label required">Lieu de Naissance</label>
+                                <input type="text" name="lieu" id="lieu" placeholder="Cocody" />
+                            </div>
+    
+                        </div>
+                       
+                        <div class="form-select">
+                            <label for="gender" class="form-label required">Genre</label>
+                            <div class="select-list">
+                                <select name="gender" id="gender">
+                                    <option disabled>Homme</option>
+                                    <option value="Male">Homme</option>
+                                    <option value="Female">Femme</option>
+                                    <option value="other">Autre</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-select">
+                            <label for="situation" class="form-label required">Situation Matrimoniale</label>
+                            <div class="select-list">
+                                <select name="situation" id="situation">
+                                    <option disabled>Célibatare</option>
+                                    <option value="celibataire">Célibataire</option>
+                                    <option value="marie">Marié(e)</option>
+                                    <option value="veuf">Veuf(ve)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                        <div class="form-group">
+                            <label for="email" class="form-label required">Email Personnel</label>
+                            <input type="email" name="email" id="email" placeholder="jean@gmail.com"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label required">Téléphone Personnel</label>
+                            <input type="number" name="phone" id="phone" placeholder="0708091012" min="0"/>
+                        </div>
+                        </div>
+                        <div class="form-row">
+                        <div class="form-select">
+                            <label for="gender" class="form-label required">Types de Pièce</label>
+                            <div class="select-list">
+                                <select name="piece" id="piece">
+                                    <option disabled>CNI</option>
+                                    <option value="cni">CNI</option>
+                                    <option value="passeport">Passeport</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="num_piece" class="form-label required">Numero de la Pièce</label>
+                            <input type="text" name="num_piece" id="num_piece" placeholder="CI014774747"/>
+                        </div>
+
+                        </div>
+                        
+                      
+                    </fieldset>
+
+                    <h3>
+                        <span class="icon"><i class="ti-email"></i></span>
+                        <span class="title_text">Professionelle</span>
+                    </h3>
+                    <fieldset>
+                        <legend>
+                            <span class="step-heading">Information Professionelle: </span>
+                            <span class="step-number">Etape 2 / 4</span>
+                        </legend>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="profession" class="form-label required">Profession</label>
+                                <input type="text" name="profession" id="profession"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="employeur" class="form-label required">Employeur</label>
+                                <input type="text" name="employeur" id="employeur"/>
+                            </div>
+                            </div>
+                            <div class="form-row">
+                        <div class="form-group">
+                            <label for="email" class="form-label required">Email Professionelle</label>
+                            <input type="email" name="email" id="email" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="form-label required">Téléphone de Bureau</label>
+                            <input type="number" name="phone" id="phone" />
+                        </div>
+                            </div>
+                        <div class="form-group">
+                            <label for="salaire" class="form-label required">Salaire</label>
+                            <input type="number" name="salaire" id="salaire" onkeydown="javascript: return event.keyCode === 8 || event.keyCode===46 ? true: !isNan(Number(event.key))">
+                        </div>
+                        <div class="form-group">
+                            <label for="domiciliation" class="form-label required">Domiciliation des avis de prélèvement des loyers</label>
+                            <input type="text" name="domiciliation" id="domiciliation" />
+                        </div>
+                        <div class="form-group">
+                            <label for="domiciliation" class="form-label required">Numero de compte de prélèvement</label>
+                            <input type="text" name="domiciliation" id="domiciliation" />
+                        </div>
+
+                    </fieldset>
+
+                    <h3>
+                        <span class="icon"><i class="ti-star"></i></span>
+                        <span class="title_text">Matériel</span>
+                    </h3>
+                    <fieldset>
+                        <legend>
+                            <span class="step-heading">Information sur le Materiel: </span>
+                            <span class="step-number">Etape 3 / 4</span>
+                        </legend>
+                        
+                        <div class="form-row">
+                        <div class="form-group">
+                            <label for="designation" class="form-label required">Désignation</label>
+                            <input type="text" name="designation" id="designation" />
+                        </div>
+                        <div class="form-group">
+                            <label for="type" class="form-label required">Type du Materiel</label>
+                            <input type="text" name="type" id="type" />
+                        </div>
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="etat_materiel" class="form-label required">Etat du Materiel</label>
+                        <input type="text" name="etat_materiel" id="etat_materiel" />
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="marque" class="form-label required">Marque</label>
+                            <input type="text" name="marque" id="marque" />
+                        </div>
+                        <div class="form-group">
+                            <label for="prix_achat" class="form-label required">Prix d'achat</label>
+                            <input type="number" name="prix_achat" id="prix_achat" />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nom_four" class="form-label required">Nom du Fournisseur</label>
+                            <input type="text" name="nom_four" id="nom_four" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email_four" class="form-label required">Email Fournisseur</label>
+                            <input type="email" name="email_four" id="email_four" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact_four" class="form-label required">Contact Fournisseur</label>
+                        <input type="number" name="contact_four" id="contact_four" />
+                    </div>
+                    <div class="form-row">
+                        <div class="form-select">
+                            <label for="gender" class="form-label required">Durée de Location</label>
+                            <div class="select-list">
+                                <select name="piece" id="piece">
+                                    <option>Années</option>
+                                    <option value="05">05 ans</option>
+                                    <option value="05">10 ans</option>
+                                    <option value="05">15 ans</option>
+                                    <option value="05">20 ans</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-select">
+                            <label for="gender" class="form-label required">Periode de prélèvement</label>
+                            <div class="select-list">
+                                <select name="piece" id="piece">
+                                    <option>Périodicité</option>
+                                    <option value="mensuelle">Mensuelle</option>
+                                    <option value="semestrielle">Semestrielle</option>
+                                    <option value="trimestrielle">Trimestrielle</option>
+                                    <option value="annuelle">Annuelle</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="loyer" class="form-label required">Loyers à Prélever</label>
+                        <input type="number" name="loyer" id="loyer" />
+                    </div>
+                    </fieldset>
+
+                    <h3>
+                        <span class="icon"><i class="ti-file"></i></span>
+                        <span class="title_text">Pièces Jointe</span>
+                    </h3>
+                    <fieldset>
+                        <legend>
+                            <span class="step-heading">Pièces Jointe: </span>
+                            <span class="step-number">Etape 4 / 4</span>
+                        </legend>
+                        <div class="form-group">
+                            <label for="piece" class="form-label required">Pièce d'Indentité</label>
+                            <input type="file" name="piece" id="piece" />
+                        </div>
+                        <div class="form-group">
+                            <label for="piece" class="form-label required">Bulletin de Salaire</label>
+                            <input type="file" name="piece" id="piece" />
+                        </div>
+                        <div class="form-group">
+                            <label for="piece" class="form-label required">Certificat de Résidence</label>
+                            <input type="file" name="piece" id="piece" />
+                        </div>
+                            
+
+                        
+                    </fieldset>
+            </form>
+        </div>
+
+    </div>
+    <div class="footer">
+        
+    </div>
+
+    <!-- JS -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="assets/vendor/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="assets/vendor/jquery-steps/jquery.steps.min.js"></script>
+    <script src="assets/vendor/minimalist-picker/dobpicker.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+#valid{
+    position: relative;
+    top: 140px;
+    left: 630px;
+    background-color: #f33f3f;
+    border: 2px solid black;
+    color: white;
+}
+#valid:hover{
+    background-color: rgba(0, 255, 34, 0.575);
+    border: 2px solid rgba(0, 255, 34, 0.575);
+    color: white;
+}
